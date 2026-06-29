@@ -6,6 +6,7 @@ import { StateManagement } from './pages/StateManagement';
 import { ApiPlayground } from './pages/ApiPlayground';
 import { A11yStorage } from './pages/A11yStorage';
 import { Analytics } from './pages/Analytics';
+import { DevOpsReliability } from './pages/DevOpsReliability';
 import { useTheme } from './context/ThemeContext';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { CustomAlertModal } from './components/CustomAlertModal';
@@ -20,7 +21,8 @@ import {
   Menu, 
   X,
   FileCode,
-  BarChart3
+  BarChart3,
+  Terminal
 } from 'lucide-react';
 
 function App() {
@@ -34,6 +36,7 @@ function App() {
     { name: 'API Playground', to: '/api-playground', icon: Globe },
     { name: 'Forms & Charts', to: '/analytics', icon: BarChart3 },
     { name: 'Security & A11y', to: '/a11y-storage', icon: ShieldCheck },
+    { name: 'DevOps & Reliability', to: '/devops-reliability', icon: Terminal },
   ];
 
   return (
@@ -154,6 +157,7 @@ function App() {
               <Route path="/api-playground" element={<ApiPlayground />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/a11y-storage" element={<A11yStorage />} />
+              <Route path="/devops-reliability" element={<DevOpsReliability />} />
             </Routes>
           </ErrorBoundary>
         </main>

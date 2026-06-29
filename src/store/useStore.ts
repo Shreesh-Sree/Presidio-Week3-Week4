@@ -34,7 +34,13 @@ const initialTasks: DashboardTask[] = [
   { id: '5', title: 'Perform API requests using TanStack Query', category: 'API Handling', completed: false, notes: 'Connecting to remote JSONPlaceholder API' },
   { id: '6', title: 'Establish Error Boundaries for component fallbacks', category: 'React Advanced', completed: false },
   { id: '7', title: 'Implement secure storage integrations (cookies, session, local)', category: 'UX & Security', completed: false },
-  { id: '8', title: 'Run accessibility (a11y) audits and fix ARIA labels', category: 'UX & Accessibility', completed: false }
+  { id: '8', title: 'Run accessibility (a11y) audits and fix ARIA labels', category: 'UX & Accessibility', completed: false },
+  { id: '9', title: 'Establish GitHub Actions workflow for automated validation', category: 'DevOps & CI/CD', completed: false, notes: 'Linting, testing, & type check validations' },
+  { id: '10', title: 'Draft declarative Terraform configurations for scalable AWS/GCP/Azure resource structures', category: 'DevOps & IaC', completed: false, notes: 'Secure storage & network setups' },
+  { id: '11', title: 'Create multi-stage Docker container configuration for Vite app staging', category: 'DevOps & Containers', completed: false, notes: 'Production multi-stage build optimization' },
+  { id: '12', title: 'Structure basic Kubernetes deployment, service, and HorizontalPodAutoscaler manifests', category: 'DevOps & Orchestration', completed: false, notes: 'Scalable container orchestrations' },
+  { id: '13', title: 'Implement cloud least privilege policies and secure Secrets Management simulations', category: 'DevOps & Security', completed: false, notes: 'IAM best practices & encrypted vaults' },
+  { id: '14', title: 'Configure optional Prometheus metric exporters and Grafana dashboard hooks', category: 'DevOps & Monitoring', completed: false, notes: 'SRE observability & telemetry metrics' }
 ];
 
 export const useStore = create<AppState>()(
